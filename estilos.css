@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #e0e0ff;
+  background-color: black;
+  overflow-x: hidden;
+  position: relative;
+  z-index: 1;
+}
+
+canvas#estrellas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+header {
+  text-align: center;
+  padding: 3em 1em;
+  background: rgba(15, 15, 46, 0.8);
+  border-bottom: 2px solid #663399;
+  z-index: 2;
+  position: relative;
+}
+
+header h1 {
+  font-size: 3em;
+  color: #cc66ff;
+  text-shadow: 0 0 8px #cc66ff;
+}
+
+header p {
+  font-style: italic;
+  color: #99ccff;
+}
+
+nav {
+  background: rgba(26, 26, 62, 0.8);
+  text-align: center;
+  padding: 1em;
+  z-index: 2;
+  position: relative;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 1em;
+}
+
+nav ul li a {
+  color: #99ccff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #cc66ff;
+}
+
+main {
+  padding: 2em;
+  max-width: 800px;
+  margin: auto;
+  z-index: 2;
+  position: relative;
+}
+
+section {
+  margin-bottom: 3em;
+  border-left: 4px solid #cc66ff;
+  padding-left: 1em;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 1s ease;
+}
+
+section.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+h2 {
+  color: #ff99ff;
+  border-bottom: 1px solid #663399;
+}
+
+footer {
+  text-align: center;
+  padding: 1em;
+  background: rgba(13, 13, 26, 0.9);
+  color: #999;
+  font-size: 0.9em;
+  z-index: 2;
+  position: relative;
+}
+/* Galería artística */
+.galeria {
+  display: flex;
+  gap: 1em;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.galeria img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border: 3px solid #cc66ff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #cc66ff;
+  transition: transform 0.3s ease;
+}
+
+.galeria img:hover {
+  transform: scale(1.05);
+}
+
+/* Área de escritura */
+#mensaje {
+  width: 100%;
+  height: 100px;
+  margin-top: 1em;
+  padding: 1em;
+  border: 2px solid #99ccff;
+  border-radius: 10px;
+  background-color: #1a1a3e;
+  color: #e0e0ff;
+  font-size: 1em;
+  resize: vertical;
+}
+
+button {
+  margin-top: 1em;
+  padding: 0.5em 1.5em;
+  background-color: #663399;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #cc66ff;
+}
+
+#confirmacion {
+  margin-top: 1em;
+  font-style: italic;
+  color: #99ffcc;
+}
+
