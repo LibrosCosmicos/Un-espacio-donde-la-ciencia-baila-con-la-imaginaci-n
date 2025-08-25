@@ -1,0 +1,18 @@
+[
+  {
+    "titulo": "El extranjero",
+    "autor": "Albert Camus",
+    "reseña": "Enigmática primera novela de Albert Camus, publicada en francés como L’Étranger en 1942...",
+    "enlace": "https://www.gandhi.com.mx/el-extranjero-9786073803847/p",
+    "portada": "https://covers.openlibrary.org/b/id/8231996-L.jpg",
+    "estrellas": 5
+  },
+  {
+    "titulo": "La puerta de los tres cerrojos",
+    "autor": "Sonia Fernández Vidal",
+    "reseña": "En este libro se mezcla por primera vez, fantasía y física cuántica...",
+    "enlace": "https://www.planetadelibros.com/libro-trilogia-la-puerta-de-los-tres-cerrojos-pack/303896",
+    "portada": "https://imagessl6.casadellibro.com/a/l/t0/66/9788424643266.jpg",
+    "estrellas": 5
+  }
+]

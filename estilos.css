@@ -1,0 +1,87 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  color: white;
+  text-align: center;
+}
+
+header {
+  padding: 2em;
+  background: rgba(0,0,0,0.6);
+}
+
+h1 { font-size: 2.5em; color: #ffccff; }
+h2 { color: #66ccff; }
+
+section { padding: 2em; }
+footer { background: rgba(0,0,0,0.8); padding: 1em; font-size: 0.9em; }
+
+.fade-in { animation: fadeIn 2s ease-in; }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+.galeria-libros {
+  display: flex;
+  gap: 2em;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 2em;
+}
+
+.card {
+  background: rgba(255,255,255,0.05);
+  padding: 1em;
+  border-radius: 15px;
+  text-align: center;
+  width: 200px;
+  box-shadow: 0 0 10px #663399;
+  transition: transform 0.3s ease;
+}
+
+.card img { width: 100%; border-radius: 10px; margin-bottom: 0.5em; }
+.card:hover { transform: scale(1.05); }
+.card h3 { color: #fff; margin: 0.3em 0; }
+.card .autor { font-size: 0.9em; color: #ccc; margin-bottom: 0.5em; }
+.card .btn {
+  display: inline-block;
+  padding: 0.4em 0.8em;
+  background: #663399;
+  color: #fff;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 0.85em;
+  transition: background 0.3s ease;
+}
+.card .btn:hover { background: #9955ff; }
+
+.reseñas {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.reseña {
+  display: flex;
+  gap: 1em;
+  background: rgba(255,255,255,0.05);
+  padding: 1em;
+  border-radius: 15px;
+  box-shadow: 0 0 10px #663399;
+}
+.reseña img { width: 120px; border-radius: 10px; }
+.reseña .texto h3 { margin: 0; color: #fff; }
+.reseña .texto p { margin: 0.5em 0; color: #ddd; }
+.reseña .texto .estrellas { color: gold; font-size: 1.1em; }
+.reseña .texto .btn {
+  display: inline-block;
+  margin-top: 0.5em;
+  padding: 0.4em 0.8em;
+  background: #663399;
+  color: #fff;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 0.85em;
+}
+.reseña .texto .btn:hover { background: #9955ff; }
